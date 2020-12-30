@@ -1,9 +1,9 @@
-# LINE Chat Bot for Beginner - PHP
+# LINE LIFF for Beginner - PHP
 line-chatbot-webhook-for-beginner-php
 ### Tools ###
 - PHP ^7.XX
 - Terminal หรือใคร ใช้ Window ก็ Git ได้เลย
-- Heroku (Free Hosting https://devcenter.heroku.com/start)
+- Heroku (Free Hosting https://devcenter.heroku.com/start). ** ติดตั้ง Heroku PHP ให้เรียบร้อย
 - GIT (https://git-scm.com/)
 - Brew (https://brew.sh/) สำหรับ Install Heroku
 
@@ -16,19 +16,19 @@ line-chatbot-webhook-for-beginner-php
 
 ### Step 2 ###
 - สร้าง Project บน Heroku เลือก Create New App
-- App Name : {ชื่อภาษอังกฤษตัวเอง}-line-chatbot-lab101 => Ex. thepnatee-line-chatbot-lab101
+- App Name : {ชื่อภาษอังกฤษตัวเอง}-liff-chatbot-lab2 => Ex. thepnatee-liff-chatbot-lab2
 - Choose a region : United States
 - Click Create App
 
 ### Step 3 ###
-- Create Project ChatBotLab101
-- cd ChatBotLab101
-- git clone https://github.com/thepnatee/line-chatbot-webhook-for-beginner-php.git
-- cd line-chatbot-webhook-for-beginner-php
-- Open File : Index.php แก้ 'Channel access token'
+- Create Project ChatBotLab2
+- cd ChatBotLab2
+- git clone https://github.com/thepnatee/line-liff-for-beginner-php.git
+- cd line-liff-for-beginner-php.git
+- Open File : Index.php แก้ 'liffId'
 
 ### Step 4 : Copy Script. ###
-- cd line-chatbot-webhook-for-beginner-php (ตรวจสอบว่ายังอยู่ตำแหน่งไฟล์นี้นะ)
+- cd line-liff-for-beginner-php.git (ตรวจสอบว่ายังอยู่ตำแหน่งไฟล์นี้นะ)
 - Copy 5 บรรทัดแล้ววางบน Terminal
     - git init
     - heroku git:remote -a thepnatee-line-chatbot-lab101
@@ -37,13 +37,20 @@ line-chatbot-webhook-for-beginner-php
     - git push heroku master
 
 ### Step 5 ###
-- หน้า Heroku จะมีคำว่า Open App ก็จิ้มแรงๆ จะได้ URL : https://thepnatee-line-chatbot-lab101.herokuapp.com/
-- Copy URL แก้ใน Messaging API : ตรง Webhook
-- กด Verify รัวๆ กระโดนตบ 20 ครั้ง จะได้ Message ขึ้นว่า ซักเสร็จ ตากต่อได้เลย. เอ้ยย Success  
-- กดเปิด Use Webhook 
-- เริ่มใช้งานBot ได้เลย
+- หน้า Heroku จะมีคำว่า Open App ก็จิ้มแรงๆ จะได้ URL : https://thepnatee-liff-chatbot-lab2.herokuapp.com/
+    
+    โครงสร้างจะมีดังนี้
+    1. Index.php สำหรับหน้า Login
+    2. Controller.php ต่อ Database
+    3. ของแถม Webhook.php.
+    
+### Step6 ###
+- สร้าง Channel LINE LOGIN
+- เชื่อมต่อกับ Messagoing API 
+- สร้าง LIFF โดยการ นำ https://thepnatee-liff-chatbot-lab2.herokuapp.com/ ไปสร้างเป็น หน้า Login
+- กดปุ่ม Developing ให้เป้น Published
+- นำ LIFF URL ที่ได้ Copy แล้วลองไปวางใน LINE Channel Bot ของตัวเอง
+    
+        // เรียนรู้เพิ่มเติมได้ที่ https://github.com/line/line-liff-v2-starter
+        // รู้จากกับ LIFF https://medium.com/linedevth/introduction-to-liff-7d708e2f42ec
 
-
-### Option ###
-Config LINE Notify บรรทัดที่ 12
-Config Dialogflow บรรทัดที่ 157
