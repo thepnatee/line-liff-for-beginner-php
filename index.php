@@ -209,7 +209,7 @@
                     <div class="form-action mb-3">
                         <input id="userId" name="userId" type="hidden" >
                         <input id="pictureUrl" name="pictureUrl" type="hidden" >
-                        <input id="pictureUrl" name="pictureUrl" type="hidden"  >
+                        <input id="displayName" name="displayName" type="hidden"  >
                         <input id="statusMessage" name="statusMessage" type="hidden" >
                         <button id="sendMessageButton" class="btn btn-info btn-rounded btn-login"><i class="fas fa-lock"></i> Sign in</button>
                     </div>
